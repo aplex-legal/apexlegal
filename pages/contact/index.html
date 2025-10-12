@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - APEX LEGAL SOLUTIONS</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contact-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #002147;
+            margin: 15px auto 0;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .contact-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .contact-icon {
+            font-size: 40px;
+            color: #002147;
+            margin-bottom: 20px;
+        }
+
+        .contact-card h3 {
+            color: #002147;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .contact-card p {
+            margin-bottom: 8px;
+        }
+
+        .contact-card a {
+            color: #002147;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-card a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: white;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .facebook {
+            background-color: #4267B2;
+        }
+
+        .twitter {
+            background-color: #1DA1F2;
+        }
+
+        .instagram {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        }
+
+        .linkedin {
+            background-color: #0077B5;
+        }
+
+        @media (max-width: 768px) {
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="header-content">
+            <h1>Contact Us</h1>
+            <nav>
+                <a href="../../index.html">Home</a>
+                <a href="../blog/index.html">Blog</a>
+                <a href="../aboutme/index.html">About Us</a>
+                <a href="../services/index.html">Our Services</a>
+                <a href="../library/index.html">Library</a>
+                <a href="../ourteam/index.html">Our Team</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            
+            <p>We welcome your inquiries and look forward to assisting you with your legal needs. Please feel free to reach out to us through any of the following channels:</p>
+            
+            <div class="contact-content">
+                <div class="contact-card">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <h3>Email Us</h3>
+                    <p>For general inquiries:</p>
+                    <p><a href="mailto:apexlegal@gmail.com">apexlegal@gmail.com</a></p>
+                    <p>For legal consultations:</p>
+                    <p><a href="mailto:apexlegal@aol.com">apexlegal@aol.com</a></p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt contact-icon"></i>
+                    <h3>Call Us</h3>
+                    <p>Main Office:</p>
+                    <p><a href="tel:+1234567890">0385-3150836</a></p>
+                    <p>Client Support:</p>
+                    <p><a href="tel:+1234567899">8837432507</a></p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <h3>Visit Us</h3>
+                    <p>Keishampat Thokchom Leikai</p>
+                    <p>Near Manipur Rural Bank</p>
+                    <p>Imphal, Manipur</p>
+                    <p>India</p>
+                    <p>Business Hours: Mon-Sat, 9am-5pm</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-share-alt contact-icon"></i>
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media to stay updated with our latest news and insights.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        <div class="contact-info">
+            <p>Email: apexlegal@gmail.com | Phone: 0385-3150836</p>
+        </div>
+    </footer>
+</body>
+</html>

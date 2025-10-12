@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - APEX LEGAL SOLUTIONS</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .team-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #002147;
+            margin: 15px auto 0;
+        }
+        
+        /* Team members grid styling */
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .team-member {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        
+        .member-photo {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .member-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        /* Try different positioning options for image2.jpeg and image3.jpeg */
+        .team-member:nth-child(2) .member-photo img,
+        .team-member:nth-child(3) .member-photo img {
+            object-fit: contain; /* Changed to contain instead of cover */
+            background-color: #f5f5f5; /* Light background for any empty space */
+            padding: 5px; /* Add a bit of padding */
+        }
+        
+        /* Alternative approach if contain doesn't work well */
+        /*
+        .team-member:nth-child(2) .member-photo img {
+            object-fit: cover;
+            object-position: top center; /* Focus on the top part of the image */
+        }
+        */
+        
+        /* Add this specific style for centering Binod Huidrom name */
+        .team-member:nth-child(2) .member-info h3 {
+            text-align: center;
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+        
+        /* Ensure all names are properly centered in their containers */
+        .member-info {
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .member-info h3 {
+            margin-bottom: 5px;
+            color: #002147;
+            text-align: center;
+            white-space: nowrap; /* Prevents text from wrapping */
+            overflow: hidden; /* Prevents overflow */
+            text-overflow: ellipsis; /* Shows ... if text is too long */
+            width: 100%;
+            font-size: 0.95rem; /* Slightly smaller font size for long names */
+        }
+        
+        /* Make first and third team member names stay on one line */
+        .team-member:nth-child(1) .member-info h3,
+        .team-member:nth-child(3) .member-info h3 {
+            white-space: nowrap;
+            font-size: 0.95rem;
+        }
+        
+        /* Optional: Adjust container width for better fit */
+        .team-member {
+            min-width: 260px; /* Ensure minimum width for containers */
+        }
+        
+        /* Responsive adjustment */
+        @media (max-width: 768px) {
+            .member-info h3 {
+                font-size: 0.85rem; /* Even smaller on mobile */
+            }
+            
+            .team-members {
+                grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="header-content">
+            <h1>Our Team</h1>
+            <nav>
+                <a href="../../index.html">Home</a>
+                <a href="../blog/index.html">Blog</a>
+                <a href="../contact/index.html">Contact Us</a>
+                <a href="../aboutme/index.html">About Us</a>
+                <a href="../services/index.html">Our Services</a>
+                <a href="../library/index.html">Library</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="team-section">
+            <div class="section-title">
+                <h2>Meet Our Team Leaders</h2>
+            </div>
+            
+            <p>At Apex Legal Solutions, our team consists of dedicated legal professionals with extensive experience and knowledge in various domains of law. We are committed to providing exceptional legal services to our clients with integrity, professionalism, and attention to detail.</p>
+            
+            <!-- Fix for the team members section -->
+            <div class="team-members">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="../../resources/image1.jpeg" alt="Member 1">
+                    </div>
+                    <div class="member-info">
+                        <h3>SOUBAM NONGPOKNGANBA</h3>
+                        <h4>Advocate & Former Lecturer, Mizoram Law College</h4>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="../../resources/image2.jpeg" alt="Member 2">
+                    </div>
+                    <div class="member-info">
+                        <h3>BINOD HUIDROM</h3>
+                        <h4>Advocate</h4>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="../../resources/image3.jpeg" alt="Member 3">
+                    </div>
+                    <div class="member-info">
+                        <h3>ARIBAM NOUTUNESHWARI DEVI</h3>
+                        <h5>(Retd. District & Sessions Judge)</h5>
+                        <h5>Advocate Manipur High Court</h5>
+                    </div>
+                </div>
+                
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        <div class="contact-info">
+            <p>Email: contact@example.com | Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>
